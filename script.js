@@ -49,7 +49,7 @@ $(function(){
       var columnAddCard = $('<button class="column-add-card">Dodaj kartę</button>');
 
       // PODPINANIE ODPOWIEDNICH ZDARZEŃ POD WĘZŁY
-      columnDelete.click(function() {
+      deleteColumn.click(function() {
         self.deleteColumn();
       });
       columnAddCard.click(function(event) {
@@ -59,7 +59,7 @@ $(function(){
 
       // KONSTRUOWANIE ELEMENTU KOLUMNY
       column.append(columnTitle)
-      .append(columnDelete)
+      .append(deleteColumn)
       .append(columnAddCard)
       .append(columnCardList);
       return column;

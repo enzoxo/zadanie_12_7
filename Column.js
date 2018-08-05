@@ -15,7 +15,7 @@ function Column(id, name) {
 		var columnAddCard = $('<button class="column-add-card">Dodaj kartę</button>');
 		
 		// PODPINANIE ODPOWIEDNICH ZDARZEŃ POD WĘZŁY
-		deleteColumn: (function() {
+		columnDelete: (function() {
 
 			var self = this;
 			$.ajax({
@@ -25,7 +25,7 @@ function Column(id, name) {
 					self.element.remove();
 				}
 			});
-			//self.deleteColumn();
+			//deleteColumn();
 		});
 		
 		columnAddCard.click(function(event) {
@@ -44,7 +44,7 @@ function Column(id, name) {
 					self.createCard(card);
 				}
 			});
-			//self.createCard(new Card(cardName);
+			
 		});
 			
 			// KONSTRUOWANIE ELEMENTU KOLUMNY
@@ -59,7 +59,7 @@ Column.prototype = {
 	createCard: function(card) {
 	  this.element.children('ul').append(card.element);
 	},
-	deleteColumn: function() {
+	columnDelete: function() {
 	  this.element.remove();
 	}
 };

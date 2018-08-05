@@ -32,12 +32,5 @@ function setupCards(col, cards){
 	col.createCard(cardObj);
 	})
 }
-// function randomString() {
-// 	var chars = '0123456789abcdefghiklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXTZ'.split();
-// 	var str = '', i;
-// 	for (i = 0; i < 10; i++) {
-// 	  str += chars[Math.floor(Math.random() * chars.length)];
-// 	}
-// 	return str;
-// }
+
 

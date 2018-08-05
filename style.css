@@ -16,7 +16,7 @@ body {margin: 0;}
 }
 /* BOARD */
 .board h1 {
-  margin-left: 8px;
+  text-align: center;
 }
 .column-container {
   display: flex;
@@ -28,20 +28,32 @@ body {margin: 0;}
 /* COLUMN */
 .column {
   order: 1;
+  background-color: #4BBF6B;
+  border-radius: 15px;
+  flex: 1;
+  margin: 50px 20px;
+  padding: 20px;
   min-width: 300px;
   min-height: 50vh;
-  background-color: lightgrey;
-  margin-left: 8px;
   list-style: none;
   position: relative;
 }
 .column-add-card {
   cursor: pointer;
-  text-decoration: underline;
+  text-decoration: none;
   margin: 5px 8px;
+  padding: 2px;
   display: block;
+
 }
 
+.column-title {
+    color: white;
+    background-color: #4267B2;
+    border-radius: 10px;
+    height: 40px;
+    text-align: center;
+  }
 /* STYLE KARTY */
 .card {
   box-sizing: border-box;
@@ -51,6 +63,8 @@ body {margin: 0;}
   padding: 4px;
   overflow: hidden;
   position: relative;
+  background-color: #E2E4E6;
+
 }
 .card-list {
   list-style: none;
@@ -67,4 +81,8 @@ body {margin: 0;}
   margin-bottom: 5px;
   border: 2px solid lightgrey;
   background-color: lightblue;
+}
+
+.create-column{
+  margin: auto;
 }
