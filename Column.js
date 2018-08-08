@@ -15,11 +15,10 @@ function Column(id, name) {
 		var columnAddCard = $('<button class="column-add-card">Dodaj kartę</button>');
 		
 		// PODPINANIE ODPOWIEDNICH ZDARZEŃ POD WĘZŁY
-		columnDelete: (function() {
+		columnDelete.click(function() {
 
-			var self = this;
 			$.ajax({
-				url: baseUrl + '/column' + self.id,
+				url: baseUrl + '/column/' + self.id,
 				method: 'DELETE',
 				success: function(response){
 					self.element.remove();
